@@ -1,0 +1,313 @@
+{
+	"info": {
+		"_postman_id": "8a5e449c-a2dd-43c8-973d-3339e52a8476",
+		"name": "PBFUTSFAWAZ",
+		"description": "Berikut merupakan collection API yang saya buat untuk memudahkan testing API pada postman",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "33432550"
+	},
+	"item": [
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "Read Products",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJwcm9qZWN0dXRzZmF3YXouY29tIiwiaWF0IjoxNzE2MDE2MjU1LCJleHAiOjE3MTYwMTk4NTUsInN1YiI6MSwibmFtZSI6ImFkbWluIiwiZW1haWwiOiJhZG1pbkBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4ifQ.Xef0Mgt4koV3yyjevGOyjU7NKU5bEfCdSoB0-heTIg4"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "https://fawazpbf.vyst.my.id/api/products"
+					},
+					"response": []
+				},
+				{
+					"name": "Read Product by ID",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJwcm9qZWN0dXRzZmF3YXouY29tIiwiaWF0IjoxNzE2MTA0MjgwLCJleHAiOjE3MTYxMDc4ODAsInN1YiI6MiwibmFtZSI6ImFkbWluIiwiZW1haWwiOiJhZG1pbkBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4ifQ.xMa3k-cPh24RWXxiN1nXEGwtbrjNZH0_T5z7vXGAalA"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "https://fawazpbf.vyst.my.id/api/product/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Create Products",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJwcm9qZWN0dXRzZmF3YXouY29tIiwiaWF0IjoxNzE2MTA0MjgwLCJleHAiOjE3MTYxMDc4ODAsInN1YiI6MiwibmFtZSI6ImFkbWluIiwiZW1haWwiOiJhZG1pbkBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4ifQ.xMa3k-cPh24RWXxiN1nXEGwtbrjNZH0_T5z7vXGAalA"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Toyota Yaris\",\r\n    \"description\": \"Mobil ini berwarna Silver dan kencaang\",\r\n    \"price\": \"1500000\",\r\n    \"category_id\": 1,\r\n    \"expired_at\": \"2024-05-30\",\r\n    \"modified_by\": \"admin@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://fawazpbf.vyst.my.id/api/product"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Products",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJwcm9qZWN0dXRzZmF3YXouY29tIiwiaWF0IjoxNzE2MTA0MjgwLCJleHAiOjE3MTYxMDc4ODAsInN1YiI6MiwibmFtZSI6ImFkbWluIiwiZW1haWwiOiJhZG1pbkBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4ifQ.xMa3k-cPh24RWXxiN1nXEGwtbrjNZH0_T5z7vXGAalA"
+							}
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"price\": \"410000\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://fawazpbf.vyst.my.id/api/product/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Destroy Products",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJwcm9qZWN0dXRzZmF3YXouY29tIiwiaWF0IjoxNzE2MTA0MjgwLCJleHAiOjE3MTYxMDc4ODAsInN1YiI6MiwibmFtZSI6ImFkbWluIiwiZW1haWwiOiJhZG1pbkBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4ifQ.xMa3k-cPh24RWXxiN1nXEGwtbrjNZH0_T5z7vXGAalA"
+							}
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": "https://fawazpbf.vyst.my.id/api/product/1"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Category",
+			"item": [
+				{
+					"name": "Read Category",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJwcm9qZWN0dXRzZmF3YXouY29tIiwiaWF0IjoxNzE2MTA0MjgwLCJleHAiOjE3MTYxMDc4ODAsInN1YiI6MiwibmFtZSI6ImFkbWluIiwiZW1haWwiOiJhZG1pbkBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4ifQ.xMa3k-cPh24RWXxiN1nXEGwtbrjNZH0_T5z7vXGAalA"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "https://fawazpbf.vyst.my.id/api/categories"
+					},
+					"response": []
+				},
+				{
+					"name": "Read Category By ID",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJwcm9qZWN0dXRzZmF3YXouY29tIiwiaWF0IjoxNzE2MTA0MjgwLCJleHAiOjE3MTYxMDc4ODAsInN1YiI6MiwibmFtZSI6ImFkbWluIiwiZW1haWwiOiJhZG1pbkBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4ifQ.xMa3k-cPh24RWXxiN1nXEGwtbrjNZH0_T5z7vXGAalA"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "https://fawazpbf.vyst.my.id/api/category/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Create Category",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJwcm9qZWN0dXRzZmF3YXouY29tIiwiaWF0IjoxNzE2MTA0MjgwLCJleHAiOjE3MTYxMDc4ODAsInN1YiI6MiwibmFtZSI6ImFkbWluIiwiZW1haWwiOiJhZG1pbkBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4ifQ.xMa3k-cPh24RWXxiN1nXEGwtbrjNZH0_T5z7vXGAalA"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Mobil\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://fawazpbf.vyst.my.id/api/category"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Category",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJwcm9qZWN0dXRzZmF3YXouY29tIiwiaWF0IjoxNzE2MTA0MjgwLCJleHAiOjE3MTYxMDc4ODAsInN1YiI6MiwibmFtZSI6ImFkbWluIiwiZW1haWwiOiJhZG1pbkBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4ifQ.xMa3k-cPh24RWXxiN1nXEGwtbrjNZH0_T5z7vXGAalA"
+							}
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Mobil\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://fawazpbf.vyst.my.id/api/category/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Category",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJwcm9qZWN0dXRzZmF3YXouY29tIiwiaWF0IjoxNzE2MTA0MjgwLCJleHAiOjE3MTYxMDc4ODAsInN1YiI6MiwibmFtZSI6ImFkbWluIiwiZW1haWwiOiJhZG1pbkBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4ifQ.xMa3k-cPh24RWXxiN1nXEGwtbrjNZH0_T5z7vXGAalA"
+							}
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": "https://fawazpbf.vyst.my.id/api/category/1"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Register Account",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Bian\",\r\n    \"email\":\"bian@gmail.com\",\r\n    \"password\": \"bian1123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://fawazpbf.vyst.my.id/api/register"
+			},
+			"response": []
+		},
+		{
+			"name": "Login Account",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var template = `\r",
+							"<style type=\"text/css\">\r",
+							"    .tftable {font-size:14px;color:#333333;width:100%;border-width: 1px;border-color: #87ceeb;border-collapse: collapse;}\r",
+							"    .tftable th {font-size:18px;background-color:#87ceeb;border-width: 1px;padding: 8px;border-style: solid;border-color: #87ceeb;text-align:left;}\r",
+							"    .tftable tr {background-color:#ffffff;}\r",
+							"    .tftable td {font-size:14px;border-width: 1px;padding: 8px;border-style: solid;border-color: #87ceeb;}\r",
+							"    .tftable tr:hover {background-color:#e0ffff;}\r",
+							"</style>\r",
+							"\r",
+							"<table class=\"tftable\" border=\"1\">\r",
+							"    <tr>\r",
+							"        <th>Cookies</th>\r",
+							"    </tr>\r",
+							"    \r",
+							"    <tr>\r",
+							"        <td>{{response.cookies.__test}}</td>\r",
+							"    </tr>\r",
+							"</table>\r",
+							"`;\r",
+							"\r",
+							"function constructVisualizerPayload() {\r",
+							"    var cookies = {\r",
+							"        __test: pm.response.text().match(/__test=(.*?)(;|$)/)[1]\r",
+							"    };\r",
+							"\r",
+							"    return { response: { cookies: cookies } };\r",
+							"}\r",
+							"\r",
+							"pm.visualizer.set(template, constructVisualizerPayload());"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"admin@gmail.com\",\r\n    \"password\":\"admin\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://fawazpbf.vyst.my.id/api/login"
+			},
+			"response": []
+		},
+		{
+			"name": "Register With Google",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": {
+						"addTokenTo": "header"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "https://fawazpbf.vyst.my.id/auth/google"
+			},
+			"response": []
+		},
+		{
+			"name": "Logout Account",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJwcm9qZWN0dXRzZmF3YXouY29tIiwiaWF0IjoxNzE2MTA0MjgwLCJleHAiOjE3MTYxMDc4ODAsInN1YiI6MiwibmFtZSI6ImFkbWluIiwiZW1haWwiOiJhZG1pbkBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4ifQ.xMa3k-cPh24RWXxiN1nXEGwtbrjNZH0_T5z7vXGAalA"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"url": "https://fawazpbf.vyst.my.id/api/logout"
+			},
+			"response": []
+		}
+	]
+}
